@@ -1,0 +1,377 @@
+/*
+ * creacion de tabla hoteles
+ */
+
+CREATE TABLE Hoteles (
+	hotel_id int4 NULL,
+	zona_hotel varchar(100) NULL,
+	cantidad_personas int,
+	fecha_creacion timestamp,
+	fecha_update timestamp,
+	CONSTRAINT Hoteles_pkey PRIMARY KEY (hotel_id)
+);
+/*
+ * cracion de tabla habitaciones 
+ */
+
+CREATE TABLE Habitaciones (
+    numero_habitacion int,
+	hotel_id int4 NULL,
+	tipo_habitacion varchar(100) NULL,
+	reservada varchar(10),
+	fecha_reserva timestamp,
+	habitacion_id int null,
+	CONSTRAINT Habitaciones_pkey PRIMARY KEY (habitacion_id)
+);
+
+/*
+ * insert para agregar datos a tabla hoteles
+ */
+
+INSERT INTO hoteles.hoteles
+(hotel_id, zona_hotel, cantidad_personas, fecha_creacion, fecha_update)
+VALUES(1, 'Barranquilla', 4, '2024-02-07 09:22:04.317', '2024-02-07 09:22:04.317');
+INSERT INTO hoteles.hoteles
+(hotel_id, zona_hotel, cantidad_personas, fecha_creacion, fecha_update)
+VALUES(2, 'Cali', 6, '2024-02-07 09:22:04.317', '2024-02-07 09:22:04.317');
+INSERT INTO hoteles.hoteles
+(hotel_id, zona_hotel, cantidad_personas, fecha_creacion, fecha_update)
+VALUES(3, 'Bogota', 6, '2024-02-07 09:22:04.317', '2024-02-07 09:22:04.317');
+INSERT INTO hoteles.hoteles
+(hotel_id, zona_hotel, cantidad_personas, fecha_creacion, fecha_update)
+VALUES(4, 'Cartagena', 8, '2024-02-07 09:22:04.317', '2024-02-07 09:22:04.317');
+
+/*
+ * insert para agregar datos a la tabla habitaciones 
+ */
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(101, 1, 'Estandar', 'NO', '2024-05-15', 1);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(102, 1, 'Estandar', 'NO', NULL, 2);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(103, 1, 'Estandar', 'NO', NULL, 3);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(104, 1, 'Estandar', 'NO', NULL, 4);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(105, 1, 'Estandar', 'NO', NULL, 5);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(106, 1, 'Estandar', 'NO', NULL, 6);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(107, 1, 'Estandar', 'NO', NULL, 7);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(108, 1, 'Estandar', 'NO', NULL, 8);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(109, 1, 'Estandar', 'NO', NULL, 9);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(110, 1, 'Estandar', 'NO', NULL, 10);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(111, 1, 'Estandar', 'NO', NULL, 11);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(112, 1, 'Estandar', 'NO', NULL, 12);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(113, 1, 'Estandar', 'NO', NULL, 13);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(114, 1, 'Estandar', 'NO', NULL, 14);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(115, 1, 'Estandar', 'NO', NULL, 15);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(116, 1, 'Estandar', 'NO', NULL, 16);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(117, 1, 'Estandar', 'NO', NULL, 17);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(118, 1, 'Estandar', 'NO', NULL, 18);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(119, 1, 'Estandar', 'NO', NULL, 19);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(120, 1, 'Estandar', 'NO', NULL, 20);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(121, 1, 'Estandar', 'NO', NULL, 21);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(122, 1, 'Estandar', 'NO', NULL, 22);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(123, 1, 'Estandar', 'NO', NULL, 23);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(124, 1, 'Estandar', 'NO', NULL, 24);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(125, 1, 'Estandar', 'NO', NULL, 25);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(126, 1, 'Estandar', 'NO', NULL, 26);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(127, 1, 'Estandar', 'NO', NULL, 27);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(128, 1, 'Estandar', 'NO', NULL, 28);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(129, 1, 'Estandar', 'NO', NULL, 29);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(130, 1, 'Estandar', 'NO', NULL, 30);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(131, 1, 'Premiun', 'NO', NULL, 31);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(132, 1, 'Premiun', 'NO', NULL, 32);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(133, 1, 'Premiun', 'NO', NULL, 33);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(101, 2, 'Premiun', 'NO', NULL, 34);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(102, 2, 'Premiun', 'NO', NULL, 35);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(103, 2, 'Premiun', 'NO', NULL, 36);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(104, 2, 'Premiun', 'NO', NULL, 37);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(105, 2, 'Premiun', 'NO', NULL, 38);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(106, 2, 'Premiun', 'NO', NULL, 39);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(107, 2, 'Premiun', 'NO', NULL, 40);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(108, 2, 'Premiun', 'NO', NULL, 41);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(109, 2, 'Premiun', 'NO', NULL, 42);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(110, 2, 'Premiun', 'NO', NULL, 43);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(111, 2, 'Premiun', 'NO', NULL, 44);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(112, 2, 'Premiun', 'NO', NULL, 45);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(113, 2, 'Premiun', 'NO', NULL, 46);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(114, 2, 'Premiun', 'NO', NULL, 47);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(115, 2, 'Premiun', 'NO', NULL, 48);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(116, 2, 'Premiun', 'NO', NULL, 49);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(118, 2, 'Premiun', 'NO', NULL, 50);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(119, 2, 'Premiun', 'NO', NULL, 51);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(120, 2, 'Premiun', 'NO', NULL, 52);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(133, 2, 'Premiun', 'NO', NULL, 53);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(121, 2, 'Vip', 'NO', NULL, 54);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(122, 2, 'Vip', 'NO', NULL, 55);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(123, 2, 'Vip', 'NO', NULL, 56);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(101, 3, 'Estandar', 'NO', NULL, 57);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(102, 3, 'Estandar', 'NO', NULL, 58);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(103, 3, 'Estandar', 'NO', NULL, 59);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(104, 3, 'Estandar', 'NO', NULL, 60);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(105, 3, 'Estandar', 'NO', NULL, 61);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(106, 3, 'Estandar', 'NO', NULL, 62);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(107, 3, 'Estandar', 'NO', NULL, 63);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(108, 3, 'Estandar', 'NO', NULL, 64);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(109, 3, 'Estandar', 'NO', NULL, 65);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(110, 3, 'Estandar', 'NO', NULL, 66);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(111, 3, 'Estandar', 'NO', NULL, 67);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(112, 3, 'Estandar', 'NO', NULL, 68);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(113, 3, 'Estandar', 'NO', NULL, 69);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(114, 3, 'Estandar', 'NO', NULL, 70);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(115, 3, 'Estandar', 'NO', NULL, 71);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(116, 3, 'Estandar', 'NO', NULL, 72);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(117, 3, 'Estandar', 'NO', NULL, 73);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(118, 3, 'Estandar', 'NO', NULL, 74);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(119, 3, 'Estandar', 'NO', NULL, 75);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(120, 3, 'Estandar', 'NO', NULL, 76);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(121, 3, 'Premiun', 'NO', NULL, 77);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(122, 3, 'Premiun', 'NO', NULL, 78);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(123, 3, 'Premiun', 'NO', NULL, 79);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(124, 3, 'Premiun', 'NO', NULL, 80);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(125, 3, 'Premiun', 'NO', NULL, 81);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(126, 3, 'Premiun', 'NO', NULL, 82);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(127, 3, 'Premiun', 'NO', NULL, 83);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(128, 3, 'Premiun', 'NO', NULL, 84);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(129, 3, 'Premiun', 'NO', NULL, 85);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(130, 3, 'Premiun', 'NO', NULL, 86);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(131, 3, 'Premiun', 'NO', NULL, 87);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(132, 3, 'Premiun', 'NO', NULL, 88);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(133, 3, 'Premiun', 'NO', NULL, 89);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(134, 3, 'Premiun', 'NO', NULL, 90);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(135, 3, 'Premiun', 'NO', NULL, 91);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(136, 3, 'Premiun', 'NO', NULL, 92);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(137, 3, 'Premiun', 'NO', NULL, 93);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(138, 3, 'Premiun', 'NO', NULL, 94);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(139, 3, 'Premiun', 'NO', NULL, 95);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(140, 3, 'Premiun', 'NO', NULL, 96);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(141, 3, 'Vip', 'NO', NULL, 97);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(142, 3, 'Vip', 'NO', NULL, 98);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(101, 4, 'Estandar', 'NO', NULL, 99);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(102, 4, 'Estandar', 'NO', NULL, 100);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(103, 4, 'Estandar', 'NO', NULL, 101);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(104, 4, 'Estandar', 'NO', NULL, 102);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(105, 4, 'Estandar', 'NO', NULL, 103);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(106, 4, 'Estandar', 'NO', NULL, 104);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(107, 4, 'Estandar', 'NO', NULL, 105);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(108, 4, 'Estandar', 'NO', NULL, 106);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(109, 4, 'Estandar', 'NO', NULL, 107);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(110, 4, 'Estandar', 'NO', NULL, 108);
+INSERT INTO hoteles.habitaciones
+(numero_habitacion, hotel_id, tipo_habitacion, reservada, fecha_reserva, habitacion_id)
+VALUES(111, 4, 'Premiun', 'NO', NULL, 109);
+
+
+
+
